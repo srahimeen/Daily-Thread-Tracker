@@ -19,7 +19,7 @@ def run_bot():
         isMatch = any(string in thread_title for string in words_to_match)
         if submission.id not in cache and isMatch:
             print("Match found! Thread ID is " + submission.id)
-            r.send_message('FlameDra', 'DGT has been posted!', 'You are awesome!')
+            r.send_message('FlameDraBot', 'DGT has been posted!', 'You are awesome!')
             print("Message sent!")
             cache.append(submission.id)
     print("Comment loop finished. Restarting...")
